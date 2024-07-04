@@ -1,10 +1,15 @@
 import Image from "next/image";
+import DenseAppBar from "../components/DenseAppBar";
+import Contents from "../components/Contents";
 
 export default function Home() {
   return (
-    <main> 
-      <div>米倉義則</div>
-    </main>
+    <div>
+      <DenseAppBar></DenseAppBar>
+      
+      <Contents></Contents>
+
+    </div>
   
   );
 }
