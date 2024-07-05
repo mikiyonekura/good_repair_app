@@ -1,13 +1,16 @@
 import Image from "next/image";
-import DenseAppBar from "../components/DenseAppBar";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Contents from "../components/Contents";
 
 export default function Home() {
   return (
     <div>
-      <DenseAppBar></DenseAppBar>
+      <Header />
       
-      <Contents></Contents>
+      <Contents />
+
+      <Footer />
 
     </div>
   

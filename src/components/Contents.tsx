@@ -1,9 +1,67 @@
-import React from 'react'
+'use client'
 
-export default function Contents() {
-    return (
-        <div className='m-3' >
-            <h1>Contents</h1>
-        </div>
-    )
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
+interface WindowSize {
+  width: number | undefined;
+  height: number | undefined;
 }
+
+const Contents: React.FC = () => {
+  const [windowSize, setWindowSize] = useState<WindowSize>({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
+      <Image
+        src="/ban.png"
+        alt="Banner"
+        layout="fill"
+        objectFit="cover"
+        style={{
+          animation: "zoomInOut 20s infinite",
+        }}
+      />
+      <div style={{ 
+        position: "absolute", 
+        top: 0, 
+        left: 0, 
+        width: "100%", 
+        height: "100%", 
+        backgroundColor: "rgba(255, 255, 255, 0.2)" 
+      }} />
+      <style jsx global>{`
+        @keyframes zoomInOut {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default Contents;
