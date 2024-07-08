@@ -6,6 +6,8 @@ import TopImage from "../components/TopImage";
 export default function Home() {
   return (
     <div style={{ height: "100vh", overflowY: "auto" }}>
+      <meta name="google-site-verification" content="YHLJDj0u6M0GCXSv9Y6hcWPNp-UWaGFEafWWJ5il2d4" />
+      
       <Header />
 
       <div style={{ flex: 1 }}>
