@@ -31,7 +31,7 @@ const TopImage: React.FC = () => {
   return (
     <div style={{ position: "relative", width: "100%", height: "98vh", overflow:'hidden'}}>
       <Image
-        src="/kabe.jpg"
+        src="/top_image.jpg"
         alt="Banner"
         layout="fill"
         objectFit="cover"
