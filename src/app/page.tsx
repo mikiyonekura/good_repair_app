@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div style={{ height: "100vh", overflowY: "auto" }}>
       <meta name="google-site-verification" content="YHLJDj0u6M0GCXSv9Y6hcWPNp-UWaGFEafWWJ5il2d4" />
-      
+
       <Header />
 
       <div style={{ flex: 1 }}>
@@ -38,10 +38,17 @@ export default function Home() {
           </p>
         </div>
 
-        <div>
-          <h1>問い合わせ</h1>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?embedded=true" width="640" height="1928" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-        </div>
+       <div>
+        <h1>問い合わせ</h1>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?embedded=true"
+          width="640"
+          height="1928"
+        >
+          読み込んでいます…
+        </iframe>
+      </div>
+
 
         
       </div>
