@@ -8,7 +8,7 @@ interface WindowSize {
   height: number | undefined;
 }
 
-const Contents: React.FC = () => {
+const TopImage: React.FC = () => {
   const [windowSize, setWindowSize] = useState<WindowSize>({
     width: undefined,
     height: undefined,
@@ -29,14 +29,14 @@ const Contents: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
+    <div style={{ position: "relative", width: "100%", height: "98vh", overflow:'hidden'}}>
       <Image
-        src="/ban.png"
+        src="/kabe.jpg"
         alt="Banner"
         layout="fill"
         objectFit="cover"
         style={{
-          animation: "zoomInOut 20s infinite",
+          animation: "zoomInOut 10s infinite",
         }}
       />
       <div style={{ 
@@ -64,4 +64,4 @@ const Contents: React.FC = () => {
   );
 };
 
-export default Contents;
+export default TopImage;
