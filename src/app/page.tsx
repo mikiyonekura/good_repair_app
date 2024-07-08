@@ -37,8 +37,8 @@ export default function Home() {
         </div>
 
         <div>
-          <h1>以降もこんな感じで入力</h1>
-          <p>〜〜〜〜〜</p>
+          <h1>問い合わせ</h1>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?embedded=true" width="640" height="1928" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
         </div>
 
         
