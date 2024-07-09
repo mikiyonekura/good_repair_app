@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 const m_plus = M_PLUS_Rounded_1c({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "大分の舗装工事ならgood repair",
+  title: "大分の補修工事ならGOOD REPAIR",
   description: "company of repair",
 };
 
