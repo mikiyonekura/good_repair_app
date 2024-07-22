@@ -3,10 +3,15 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+interface WindowSize {
+  width: number | null;
+  height: number | null;
+}
+
 const TopImage: React.FC = () => {
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
+  const [windowSize, setWindowSize] = useState<WindowSize>({
+    width: null,
+    height: null,
   });
 
   useEffect(() => {
@@ -33,41 +38,6 @@ const TopImage: React.FC = () => {
         className="top-image"
       />
       <div className="overlay" />
-      <style jsx global>{`
-        @keyframes zoomInOut {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.1);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-        .top-image-container {
-          position: relative;
-          width: 100%;
-          height: 98vh;
-          overflow: hidden;
-        }
-        .top-image {
-          animation: zoomInOut 10s infinite;
-        }
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(255, 255, 255, 0.0);
-        }
-        @media (max-width: 768px) {
-          .top-image-container {
-            height: 30vh;
-          }
-        }
-      `}</style>
     </div>
   );
 };
