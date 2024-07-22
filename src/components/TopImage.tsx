@@ -3,13 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-interface WindowSize {
-  width: number | undefined;
-  height: number | undefined;
-}
-
 const TopImage: React.FC = () => {
-  const [windowSize, setWindowSize] = useState<WindowSize>({
+  const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
   });
@@ -29,24 +24,15 @@ const TopImage: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "98vh", overflow:'hidden'}}>
+    <div className="top-image-container">
       <Image
         src="/top_image.jpg"
         alt="Banner"
         layout="fill"
         objectFit="cover"
-        style={{
-          animation: "zoomInOut 10s infinite",
-        }}
+        className="top-image"
       />
-      <div style={{ 
-        position: "absolute", 
-        top: 0, 
-        left: 0, 
-        width: "100%", 
-        height: "100%", 
-        backgroundColor: "rgba(255, 255, 255, 0.0)" 
-      }} />
+      <div className="overlay" />
       <style jsx global>{`
         @keyframes zoomInOut {
           0% {
@@ -57,6 +43,28 @@ const TopImage: React.FC = () => {
           }
           100% {
             transform: scale(1);
+          }
+        }
+        .top-image-container {
+          position: relative;
+          width: 100%;
+          height: 98vh;
+          overflow: hidden;
+        }
+        .top-image {
+          animation: zoomInOut 10s infinite;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.0);
+        }
+        @media (max-width: 768px) {
+          .top-image-container {
+            height: 30vh;
           }
         }
       `}</style>

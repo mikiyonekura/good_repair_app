@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .topic_name {
-  font-size:  3.5vh;
+  font-size: 3.5vh;
   font-weight: bold;
-  padding: 5% 15% 0% 0%;
+  padding: 5% 15% 0 0;
   border-bottom: 3px solid #b2d5de;
 }
 
@@ -14,19 +15,32 @@
   font-weight: bold;
 }
 
+.sample_image {
+  padding: 5% 15%;
+}
+
 .footer {
-    background-color: #d4ae03;
-    height: 30px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; 
-    padding: 5%;
-    overflow: hidden;
+  background-color: #d4ae03;
+  height: 15%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 5%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .text_contents {
+    font-size: 10px;
+    font-weight: bold;
   }
-  
+  .topic_name {
+    font-size: 18px;
+  }
+}
