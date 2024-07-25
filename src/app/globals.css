@@ -35,17 +35,16 @@
 
 .footer {
   background-color: #d4ae03;
-  height: 15%;
+  height: 10%;
   color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 5%;
+  padding: 3%;
   overflow: hidden;
 }
 
