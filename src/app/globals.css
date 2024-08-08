@@ -35,7 +35,7 @@
 
 .footer {
   background-color: #d4ae03;
-  height: 10%;
+  height: 3%;
   color: #fff;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 3%;
+  padding: 2%;
   overflow: hidden;
 }
 
