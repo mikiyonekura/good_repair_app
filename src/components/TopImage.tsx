@@ -31,7 +31,7 @@ const TopImage: React.FC = () => {
   return (
     <div className="top-image-container">
       <Image
-        src="/top_image.jpg"
+        src="/top_image_2.jpg"
         alt="Banner"
         layout="fill"
         objectFit="cover"
