@@ -13,12 +13,13 @@ export default function Home() {
 
       <Header />
 
-      <Box sx={{ width: '100%', maxWidth: '100%', height: 'auto' }}>
+      <Box id='ホーム' sx={{ width: '100%', maxWidth: '100%', height: 'auto' }}>
         <TopImage />
       </Box>
 
+
      
-      <Box sx={{ padding: { xs: '5%', md: '5%' } }}>
+      <Box id='住宅の傷補修' sx={{ padding: { xs: '5%', md: '5%' } }}>
         <Box sx={{ padding: '5% 0' }}>
           <h1 className="topic_name">住宅の傷補修</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
@@ -33,12 +34,15 @@ export default function Home() {
             </ul>
 
             <br />
-            床のキズを補修した例<br />
-            <img className="sample_image" src="example_repair.png" alt="" style={{padding: '0 15%', width: '100%', height: 'auto' }} />
+            床のキズを補修した例(左：補修前 右：補修後)<br />
+            <img className="sample_image" src="repair_example_1.png" alt="" style={{padding: '2% 15%', width: '100%', height: 'auto' }} />
+            <img className="sample_image" src="repair_example_2.png" alt="" style={{padding: '2% 15%', width: '100%', height: 'auto' }} />
+            <img className="sample_image" src="repair_example_3.png" alt="" style={{padding: '2% 15%', width: '100%', height: 'auto' }} />
+
           </Box>
         </Box>
 
-        <Box sx={{ padding: '5% 0' }}>
+        <Box id='メリット' sx={{ padding: '5% 0' }}>
           <h1 className="topic_name">リペアのメリット・デメリット</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
             <ul className="cp_list"  title="メリット">
@@ -66,7 +70,7 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box sx={{ padding: '5% 0' }}>
+        <Box id='リペアの内容' sx={{ padding: '5% 0' }}>
           <h1 className="topic_name">リペア内容</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
             <ul>
@@ -80,7 +84,7 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box sx={{ padding: '3% 0' }}>
+        <Box id='料金' sx={{ padding: '3% 0' }}>
           <h1 className="topic_name">料金</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
 
@@ -103,7 +107,7 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box sx={{ padding: '3% 0' }}>
+        <Box id='問い合わせ' sx={{ padding: '3% 0' }}>
           <h1 className="topic_name">問い合わせ</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
             <p>LINE，メール，お問い合わせフォームのいずれかにてお問い合わせを行うことができます。</p>
@@ -119,7 +123,7 @@ export default function Home() {
               <li>⑤ 施工箇所の写真　2枚以上<br />
                 <span className="detail">・キズのアップ写真　(定規などキズの大きさがわかるものを入れて撮ってください。)<br />
                 ・キズのある位置写真</span>
-                <img className="sample_image" src="scar.png" alt="" style={{padding: '0 15%', width: '100%', height: 'auto' }} />
+                <img className="sample_image" src="scar.png" alt="" style={{padding: '0 10%', width: '100%', height: 'auto' }} />
 
               </li>
             </ul>
@@ -127,14 +131,14 @@ export default function Home() {
       
             <div style={{display:'flex', padding:'5% 25% ', gap:'20%'}}>
               
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2TQER3FSsXDxozxQcOuoVWxXF_y2SO3UJibK1UGqBOUX0zw/viewform" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                  <p>フォーム</p>
+                  <p>依頼フォーム</p>
                   <img src="form.png" alt="LINE" style={{width: '20vh', height: 'auto'}} />
                 </div>
               </a>
 
-              <a href="https://lin.ee/7qV8m6d" target="_blank" rel="noopener noreferrer">
+              <a href="https://line.me/ti/p/62f62lqP6H" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                   <p>LINE</p>
                   <img src="line.png" alt="LINE" style={{width: '20vh', height: 'auto'}} />
@@ -157,17 +161,17 @@ export default function Home() {
               読み込んでいます…
             </iframe> */}
 
-            <p>&lt; 連絡先 &gt;<br />
-              <p>ご不明な点、質問、相談などがございましたらお気軽にご連絡ください。</p>
+            <p>&lt; 連絡先 &gt;<br /></p>
+            <p>ご不明な点、質問、相談などがございましたらお気軽にご連絡ください。</p>
+            <br />
+            <p>〒８７０－０８４８<br />
+              大分県大分市賀来北２－２０－１６　インペリアルKAKU４０２号室<br />
+              グッドリペア大分 米倉義則<br />
               <br />
-              <p>〒８７０－０８４８<br />
-                大分県大分市賀来北２－２０－１６　インペリアルKAKU４０２号室<br />
-                グッドリペア大分 米倉義則<br />
-                <br />
-                TEL　０９０－８９１２－１９３９<br />
-                MAIL　goodr.oita@gmail.com
-              </p>            
-            </p>
+              TEL　０９０－８９１２－１９３９<br />
+              MAIL　goodr.oita@gmail.com
+            </p>            
+            
 
             
 
