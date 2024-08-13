@@ -6,10 +6,10 @@
 
 /* グローバルスタイル */
 .topic_name {
-  font-size: 4.5vh;
+  font-size: 3.5vh;
   font-family: 'Hiragino Mincho Pro', 'MS PMincho', 'MS 明朝', 'MS Mincho', 'IPAMincho', 'IPA 明朝', 'IPA Mincho', 'VL PGothic', 'VL Gothic', 'メイリオ', 'Meiryo', 'sans-serif';
   font-weight: bold;
-  padding: 1% 1%;
+  padding: 1% 2.5%;
   
 }
 
@@ -110,7 +110,7 @@ ul.cp_list {
   padding: 0 0.5em;
   margin-top: 3em;
   list-style-type: none;
-  border: solid 2px #9c7604;
+  border: solid 2px #787776;
 }
 
 ul.cp_list::after {
@@ -120,7 +120,7 @@ ul.cp_list::after {
   content: attr(title);
   padding: 1px 7px;
 
-  background: #9c7604;
+  background: #787776;
   color: #fff;
   border-radius: 4px 4px 0px 0px;
 }
@@ -128,18 +128,42 @@ ul.cp_list::after {
 ul.cp_list li {
   line-height: 1.5;
   padding: 5px 0 5px 20px;
-  border-bottom: 1px dashed #9c7604;
-  position: relative; /* positionをrelativeにして、::beforeの位置をliに対して相対的に設定できるようにします */
+  border-bottom: 1px dashed #787776;
+  position: relative; 
 }
 
 ul.cp_list li::before {
   position: absolute;
   left: 5px;
-  content: "\2713"; /* チェックマークに修正 */
-  color: #9c7604;
+  content: "\2713"; 
+  color: #787776;
   font-weight: bold;
 }
 
 ul.cp_list li:last-of-type {
   border-bottom: none;
+}
+
+
+
+ul {
+  box-shadow :0px 0px 3px silver;
+  border: solid 1px whitesmoke;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+  background: #fafafa;
+}
+
+ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;
+}
+
+ul li:before {
+  font-family: "Font Awesome 5 Free";
+  /* content: "\2713"; */
+  position: absolute;
+  left : 1em; /*左端からのアイコンまで*/
+  color: gray; /*アイコン色*/
 }

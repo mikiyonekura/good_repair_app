@@ -81,58 +81,61 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box sx={{ padding: '5% 0' }}>
-          <h1 className="topic_name">料金表</h1>
+        <Box sx={{ padding: '3% 0' }}>
+          <h1 className="topic_name">料金</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
-            <p>Aプラン　業務①、②、③　材料費込みの金額です。</p>
-            <p>半日（３時間）　税込み２２０００円　　延長料金　３０分ごとに３３００円<br />
-              目安　小傷　２０～３０箇所程度<br />
-            </p>
-            <p>１日（６時間）　税込み３３０００円　　延長料金　３０分ごとに４４００円<br />
-              目安　小傷　５０～６０箇所<br />
-            </p>
-            <p>Bプラン　業務①～⑥　材料費込みの金額です。</p>
-            <p>半日（３時間）　税込み２５０００円　　延長料金　３０分ごとに３３００円<br />
-              目安　小傷　２０～３０箇所程度<br />
-            </p>
-            <p>１日（６時間）　税込み３６０００円　　延長料金　３０分ごとに４４００円<br />
-            </p>
-            <p>&lt;交通費について&gt;<br />
+
+            <ul>
+              <span className="detail">材料費込みの金額です。</span> 
+              <li>半日（３時間）　税込み２２０００円　
+              <span className="detail">小傷 ２０～３０箇所</span></li>
+              <li>１日（６時間）　税込み３３０００円　
+              <span className="detail">小傷 ５０～６０箇所</span></li>
+              <span className="detail">キズの種類や個数によって所要時間が変わります。まずは、お問い合わせください。</span>
+              
+            </ul>
+
+            <br />
+        
+            <p>&lt; 交通費について &gt;<br />
               大分市、別府市は無料です。それ以外は、JR大分駅を起点としてガソリン代１ｋｍ当たり３０円と高速道路利用時は高速道路代を加算させていただきます。<br />
             </p>
+
           </Box>
         </Box>
 
-        <Box sx={{ padding: '10% 0' }}>
+        <Box sx={{ padding: '3% 0' }}>
           <h1 className="topic_name">問い合わせ</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
             <p>LINE，メール，お問い合わせフォームのいずれかにてお問い合わせを行うことができます。</p>
             
             <p>下記事項と写真を送っていただければ、お見積りをさせていただきます。</p>
+            <br />
+            
             <ul>
               <li>① お名前　（業者様の場合は会社名と担当者名もお願いします）</li>
               <li>② 連絡先　（施工の可否や金額等をお伝えできるメールアドレスや電話番号）</li>
               <li>③ 現場の住所　（マンション、アパート名もお書きください）</li>
               <li>④ 内容（床の線キズ2ヶ所、長さ約10センチ等、なるべく具体的にご記入ください）</li>
               <li>⑤ 施工箇所の写真　2枚以上<br />
-                キズのアップ写真　定規などキズの大きさがわかるものを入れて撮ってください。<br />
-                キズのある位置写真<br />
+                <span className="detail">キズのアップ写真　定規などキズの大きさがわかるものを入れて撮ってください。<br />
+                キズのある位置写真</span>
               </li>
             </ul>
 
-            <div style={{display:'flex', padding:'5% 10%', gap:'10%'}}>
+            <div style={{display:'flex', padding:'5% 25% ', gap:'20%'}}>
               
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                   <p>フォーム</p>
-                  <img src="form.png" alt="LINE" style={{width: '50px', height: '50px'}} />
+                  <img src="form.png" alt="LINE" style={{width: '100px', height: '100px'}} />
                 </div>
               </a>
 
               <a href="https://lin.ee/7qV8m6d" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                   <p>LINE</p>
-                  <img src="line.png" alt="LINE" style={{width: '50px', height: '50px'}} />
+                  <img src="line.png" alt="LINE" style={{width: '100px', height: '100px'}} />
                 </div>
               </a>
 
@@ -152,13 +155,19 @@ export default function Home() {
               読み込んでいます…
             </iframe> */}
 
-            <p>ご不明な点、質問、相談などがございましたらお気軽にご連絡ください。</p>
-            <p>〒８７０－０８４８<br />
-              大分県大分市賀来北２－２０－１６　インペリアルKAKU４０２号室<br />
-              グッドリペア大分　　　米倉義則<br />
-              TEL　０９０－８９１２－１９３９<br />
-              MAIL　goodr.oita@gmail.com
+            <p>&lt; 連絡先 &gt;<br />
+              <p>ご不明な点、質問、相談などがございましたらお気軽にご連絡ください。</p>
+              <br />
+              <p>〒８７０－０８４８<br />
+                大分県大分市賀来北２－２０－１６　インペリアルKAKU４０２号室<br />
+                グッドリペア大分 米倉義則<br />
+                <br />
+                TEL　０９０－８９１２－１９３９<br />
+                MAIL　goodr.oita@gmail.com
+              </p>            
             </p>
+
+            
 
 
 
