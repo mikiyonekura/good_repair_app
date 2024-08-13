@@ -130,14 +130,14 @@ export default function Home() {
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                   <p>フォーム</p>
-                  <img src="form.png" alt="LINE" style={{width: '100px', height: '100px'}} />
+                  <img src="form.png" alt="LINE" style={{width: '20vh', height: 'auto'}} />
                 </div>
               </a>
 
               <a href="https://lin.ee/7qV8m6d" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                   <p>LINE</p>
-                  <img src="line.png" alt="LINE" style={{width: '100px', height: '100px'}} />
+                  <img src="line.png" alt="LINE" style={{width: '20vh', height: 'auto'}} />
                 </div>
               </a>
 
