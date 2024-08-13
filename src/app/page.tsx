@@ -75,8 +75,7 @@ export default function Home() {
               <li>③ キッチン、洗面台などのコーキング</li>
               <li>④ 水切りなどやサッシ枠などの金属補修</li>
               <li>⑤ タイル、レンガの補修</li>
-              <li>⑥ 特殊塗装</li>
-              <li>⑦ 建築業者様向け、竣工検査代行</li>
+              <li>⑥ 建築業者様向け、竣工検査代行</li>
             </ul>
           </Box>
         </Box>
@@ -98,7 +97,7 @@ export default function Home() {
             <br />
         
             <p>&lt; 交通費について &gt;<br />
-              大分市、別府市は無料です。それ以外は、JR大分駅を起点としてガソリン代１ｋｍ当たり３０円と高速道路利用時は高速道路代を加算させていただきます。<br />
+              大分市、別府市は無料です。それ以外は、JR大分駅を起点としてガソリン代1km当たり50円と高速道路利用時は高速道路代を加算させていただきます。<br />
             </p>
 
           </Box>
@@ -118,11 +117,14 @@ export default function Home() {
               <li>③ 現場の住所　（マンション、アパート名もお書きください）</li>
               <li>④ 内容（床の線キズ2ヶ所、長さ約10センチ等、なるべく具体的にご記入ください）</li>
               <li>⑤ 施工箇所の写真　2枚以上<br />
-                <span className="detail">キズのアップ写真　定規などキズの大きさがわかるものを入れて撮ってください。<br />
-                キズのある位置写真</span>
+                <span className="detail">・キズのアップ写真　(定規などキズの大きさがわかるものを入れて撮ってください。)<br />
+                ・キズのある位置写真</span>
+                <img className="sample_image" src="scar.png" alt="" style={{padding: '0 15%', width: '100%', height: 'auto' }} />
+
               </li>
             </ul>
 
+      
             <div style={{display:'flex', padding:'5% 25% ', gap:'20%'}}>
               
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
