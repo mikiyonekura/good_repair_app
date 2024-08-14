@@ -34,7 +34,7 @@ export default function Home() {
             </ul>
 
             <br />
-            床のキズを補修した例(左：補修前 右：補修後)<br />
+            補修の例(左：補修前 右：補修後)<br />
             <img className="sample_image" src="repair_example_1.png" alt="" style={{padding: '2% 15%', width: '100%', height: 'auto' }} />
             <img className="sample_image" src="repair_example_2.png" alt="" style={{padding: '2% 15%', width: '100%', height: 'auto' }} />
             <img className="sample_image" src="repair_example_3.png" alt="" style={{padding: '2% 15%', width: '100%', height: 'auto' }} />
@@ -110,9 +110,7 @@ export default function Home() {
         <Box id='問い合わせ' sx={{ padding: '3% 0' }}>
           <h1 className="topic_name">問い合わせ</h1>
           <Box className="text_contents" sx={{ padding: '2%' }}>
-            <p>LINE，メール，お問い合わせフォームのいずれかにてお問い合わせを行うことができます。</p>
-            
-            <p>下記事項と写真を送っていただければ、お見積りをさせていただきます。</p>
+            <p>LINE，メール，お問い合わせフォームのいずれかにてお問い合わせを行うことができます。下記事項と写真を送っていただければ、お見積りをさせていただきます。</p>
             <br />
             
             <ul>
@@ -129,7 +127,27 @@ export default function Home() {
             </ul>
 
       
-            <div style={{display:'flex', padding:'5% 25% ', gap:'20%'}}>
+      
+
+           
+
+
+
+            {/* 
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?embedded=true"
+              width="100%"
+              height="1928"
+              style={{ padding: '2%' }}
+            >
+              読み込んでいます…
+            </iframe> */}
+
+            <br />
+            <p>&lt; 連絡先 &gt;<br /></p>
+
+            <p>ご不明な点、質問、相談などがございましたらお気軽にご連絡ください。</p>
+            <div style={{display:'flex', padding:'5% 25% ', gap:'35%'}}>
               
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2TQER3FSsXDxozxQcOuoVWxXF_y2SO3UJibK1UGqBOUX0zw/viewform" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -146,23 +164,6 @@ export default function Home() {
               </a>
 
             </div>
-
-           
-
-
-
-            {/* 
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSf2QrK0LM0SszhyAB9WytQkrpounpPuH0urzHs0s2fEBCS-nA/viewform?embedded=true"
-              width="100%"
-              height="1928"
-              style={{ padding: '2%' }}
-            >
-              読み込んでいます…
-            </iframe> */}
-
-            <p>&lt; 連絡先 &gt;<br /></p>
-            <p>ご不明な点、質問、相談などがございましたらお気軽にご連絡ください。</p>
             <br />
             <p>〒８７０－０８４８<br />
               大分県大分市賀来北２－２０－１６　インペリアルKAKU４０２号室<br />
