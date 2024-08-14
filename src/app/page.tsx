@@ -156,7 +156,7 @@ export default function Home() {
               
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2TQER3FSsXDxozxQcOuoVWxXF_y2SO3UJibK1UGqBOUX0zw/viewform" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                  <p>業務依頼・見積もり</p>
+                  <p>フォーム</p>
                   <img src="form.png" alt="LINE" style={{width: '20vh', height: 'auto'}} />
                 </div>
               </a>
