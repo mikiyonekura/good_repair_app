@@ -152,11 +152,11 @@ export default function Home() {
             <p>&lt; 連絡先 &gt;<br /></p>
 
             <p>ご不明な点、質問、相談などがございましたらお気軽にご連絡ください。</p>
-            <div style={{display:'flex', padding:'5% 25% ', gap:'35%'}}>
+            <div style={{display:'flex', padding:'5% 25% ', gap:'30%'}}>
               
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2TQER3FSsXDxozxQcOuoVWxXF_y2SO3UJibK1UGqBOUX0zw/viewform" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                  <p>依頼フォーム</p>
+                  <p>業務依頼・見積もり</p>
                   <img src="form.png" alt="LINE" style={{width: '20vh', height: 'auto'}} />
                 </div>
               </a>
