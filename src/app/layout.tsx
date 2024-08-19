@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, M_PLUS_Rounded_1c } from "next/font/google";
 import "./globals.css";
+import Head from "next/head"; // Headコンポーネントをインポート
 
 const inter = Inter({ subsets: ["latin"] });
 const m_plus = M_PLUS_Rounded_1c({ subsets: ["latin"], weight: ["400"] });
@@ -17,6 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>グッドリペア大分</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={m_plus.className}>{children}</body>
     </html>
   );
